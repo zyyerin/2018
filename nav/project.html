@@ -1,0 +1,55 @@
+<section class="gezi">
+
+<figure class="feature">
+  <a href="https://zyyerin.github.io/noiso/" target="_blank"><img src="assets/imgs/theImpatient.png" alt=""></a>
+  <figcaption>the impatient<i>&nbsp;&nbsp;–––&nbsp;&nbsp;website</i></figcaption>
+</figure>
+<figure>
+  <a href="https://zyyerin.github.io/noiso/" target="_blank"><img src="assets/imgs/noiso.png" alt=""></a>
+  <figcaption>noiso<i>&nbsp;&nbsp;–––&nbsp;&nbsp;sound visualization</i></figcaption>
+</figure>
+<figure>
+  <a href="https://zyyerin.github.io/interactive2/project3/final/" target="_blank"><img src="assets/imgs/about.png" alt=""></a>
+  <figcaption>about:&nbsp;<i>&nbsp;&nbsp;–––&nbsp;&nbsp;exhibition microsite</i></figcaption>
+</figure>
+<figure>
+  <a href="https://zyyerin.github.io/tsface/" target="_blank"><img src="assets/imgs/26.png" alt=""></a>
+  <figcaption>26face<i>&nbsp;&nbsp;–––&nbsp;&nbsp;interactive typeface</i></figcaption>
+</figure>
+<figure class="project" id="unattainable">
+  <a href="#"><img src="assets/imgs/unattainable.png" alt=""></a>
+  <figcaption>unattainable<i>&nbsp;&nbsp;–––&nbsp;&nbsp;bookelet</i></figcaption>
+</figure>
+<figure class="project" id="untitled">
+  <a href="#"><img src="assets/imgs/untitled.png" alt=""></a>
+  <figcaption>[untitled]<i>&nbsp;&nbsp;–––&nbsp;&nbsp;interactive installation</i></figcaption>
+</figure>
+<figure class="project" id="pf">
+  <a href="#"><img src="assets/imgs/pf.png" alt=""></a>
+  <figcaption>PastFuture Cafe<i>&nbsp;&nbsp;–––&nbsp;&nbsp;identity</i></figcaption>
+</figure>
+<figure class="feature project" id="scope">
+  <a href="#"><img src="assets/imgs/scope.png" alt=""></a>
+  <figcaption>SCOPE<i>&nbsp;&nbsp;–––&nbsp;&nbsp;event identity</i></figcaption>
+</figure>
+<figure class="project" id="sp">
+  <a href="#"><img src="assets/imgs/sp.png" alt=""></a>
+  <figcaption>South Park<i>&nbsp;&nbsp;–––&nbsp;&nbsp;identity</i></figcaption>
+</figure>
+<figure class="project" id="block">
+  <a href="#"><img src="assets/imgs/block.png" alt=""></a>
+  <figcaption>A story about a block<i>&nbsp;&nbsp;–––&nbsp;&nbsp;narrative</i></figcaption>
+</figure>
+</section>
+
+<script type="text/javascript">
+  $('.project').click(function(e) {
+    $("#container").hide();
+    e.preventDefault();
+    let path = $(this).attr('id');
+    $('#container').load('../projects/' + path +'.html');
+    $("html, body").stop().animate({scrollTop:0}, 1000);
+    $('head').append('<link rel="stylesheet" type="text/css" href="assets/styles-project.css">');
+    $("#container").fadeIn(1000);
+  });
+</script>
