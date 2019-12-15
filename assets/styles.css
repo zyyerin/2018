@@ -40,8 +40,6 @@ Accessibility
 General
 --------------------------------------------------------------*/
 
-@import url("https://use.typekit.net/dyl4uzx.css");
-
 :root {
   --siteBorder: 2em;
 }
@@ -62,16 +60,15 @@ a:visited { color: inherit; }
 
 body {
     /* background-color: #fff; */
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU43M2QkAIAwEUdPK9l/TtqJEUDxyzfdjpBUi2SVzigBICBfSmQtP5MIXmdBCH/TQBSO0YYYmrCCFA3AUJ6SJX6q/AAAAAElFTkSuQmCC) repeat;
-    color: #00f;
+    color: #000;
     font-size: 16px;
-    font-family: "kiro", Helvetica, sans-serif;
+    font-family: "roboto-mono", monospace;
 }
 
 main {
   max-width: 640px;
   padding: var(--siteBorder);
-  padding-top: calc(var(--siteBorder) * 2);
+  padding-top: calc(var(--siteBorder) * 1);
 }
 
 ::-moz-selection {
