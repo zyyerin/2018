@@ -6,8 +6,8 @@ $(function() {
     let path = $(this).attr('id');
 		$('link[rel=stylesheet][href="assets/styles-project.css"]').remove();
 
-		$('nav li').css('border-bottom', '0.8em solid transparent');
-		$(this).css('border-bottom', '0.8em solid #f33');
+		$('nav li').css('font-weight', '400');
+		$(this).css('font-weight', '700');
 
 		$('#container').load('nav/' + path +'.html');
 		$("html, body").stop().animate({scrollTop:0}, 500);
