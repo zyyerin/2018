@@ -1,7 +1,11 @@
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
-
+@supports(display:grid) {
+  .gridsupports {
+    display: none;
+  }
+}
 
 /* Text meant only for screen readers */
 
@@ -53,11 +57,21 @@ General
 a { text-decoration: none; }
 a:visited { color: inherit; }
 
-.gezi-gallery a:hover, 
+.gezi-gallery a:hover,
 .gezi-about a:hover {
   background: #eee;
   color: var(--color-primary);
   transition: all .2s;
+}
+.project-anchor img {
+  z-index: 200;
+  display: none;
+  max-width: 200px;
+  position: absolute;
+  margin: -130px 0 0 0;
+}
+.project-anchor:hover img{
+  display: block;
 }
 
 .gezi-gallery a,
@@ -198,7 +212,8 @@ about page - default
   margin-bottom: var(--siteBorder);
 }
 .gezi-about p {
-  line-height: 1.7em;
+  font-size: 0.8em;
+  line-height: 1.6em;
 }
 
 .gezi-gallery img {
