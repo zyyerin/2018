@@ -1,11 +1,6 @@
 /*--------------------------------------------------------------
 Accessibility
 --------------------------------------------------------------*/
-@supports(display:grid) {
-  .gridsupports {
-    display: none;
-  }
-}
 
 /* Text meant only for screen readers */
 
