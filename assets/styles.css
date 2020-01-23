@@ -182,6 +182,7 @@ nav ul {
 }
 
 nav ul li {
+  color: var(--color-text-default);
   line-height: var(--siteBorder);
   transition: all .2s;
 }
