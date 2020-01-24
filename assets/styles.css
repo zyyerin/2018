@@ -134,6 +134,7 @@ figure {
 }
 
 figure img,
+figure video,
 figure a {
     width: 100%;
     height: auto;
@@ -141,7 +142,8 @@ figure a {
     z-index: 100;
 }
 
-figure img:hover {
+figure img:hover,
+figure video:hover {
   opacity: 0.2;
   transition: all .4s .1s;
 }
